@@ -1,7 +1,6 @@
 """## Load Package
 
 """
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -72,10 +71,6 @@ class SpacyPreprocessor(BaseEstimator, TransformerMixin):
  # helpfer functions for basic cleaning 
 
     def basic_clean(self, text):
-        
-        '''
-        This fuction removes HTML tags from text
-        '''
         if (bool(BeautifulSoup(text, "html.parser").find())==True):         
             soup = BeautifulSoup(text, "html.parser")
             text = soup.get_text()
