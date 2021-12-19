@@ -1,12 +1,3 @@
-# Loading
-"""
-
-!pip install --upgrade gensim
-!pip install -U spacy
-!python -m spacy download en_core_web_lg
-!pip install vaderSentiment
-!pip install flair
-
 """## Load Package
 
 """
